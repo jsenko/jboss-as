@@ -61,9 +61,9 @@
                     <redirectTestOutputToFile>${testLogToFile}</redirectTestOutputToFile>
                     <skipTests>${skip.stress.tests}</skipTests>
                     <includes>
-                         <include>org/jboss/as/test/integration/respawn/*TestCase.java</include>
-                         <include>org/jboss/as/test/integration/domain/*TestCase.java</include>
-                         <include>org/jboss/as/test/integration/domain/suites/*TestSuite.java</include>
+                        <include>**/Test*.java</include>
+                        <include>**/*Test.java</include>
+                        <include>**/*TestCase.java</include>
                     </includes>
                 </configuration>
             </plugin>
