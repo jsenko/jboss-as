@@ -394,7 +394,7 @@
         <!-- When -Dtest=... is set, only the default failsafe execution with standalone-full.xml will run. -->
         <profile>
             <id>onlyOneSurefireExecution.basic.profile</id>
-            <activation><property><name>it.test</name></property></activation>
+            <activation><property><name>test</name></property></activation>
             <build>
                 <plugins>
                     <plugin>

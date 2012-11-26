@@ -266,7 +266,7 @@
         -->
         <profile>
             <id>ts.clust.prevent-2nd-run-on-Dtest.profile</id>
-            <activation><property><name>it.test</name></property></activation>
+            <activation><property><name>test</name></property></activation>
             <build>
                 <plugins>
                     <plugin>

@@ -155,6 +155,8 @@
         <!-- used to enable trace logging for test suite runs -->
         <trace>none</trace>
 
+	<it.test>${test}</it.test>
+	
     </properties>
 
     <dependencyManagement>
