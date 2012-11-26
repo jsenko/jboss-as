@@ -85,21 +85,16 @@
                     </plugin>
 
                     <!--
-                       Surefire test executions
+                       Failsafe test executions
                     -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-surefire-plugin</artifactId>
+                        <artifactId>maven-failsafe-plugin</artifactId>
                         <executions>
                             <execution>
-                                <id>default-test</id>
-                                <goals><goal>test</goal></goals>
-                                <phase>none</phase>
-                            </execution>
-                            <execution>
                                 <id>osgi.default</id>
-                                <phase>test</phase>
-                                <goals><goal>test</goal></goals>
+                                <phase>integration-test</phase>
+                                <goals><goal>integration-test</goal></goals>
                                 <configuration>
                                     <excludes>
                                         <exclude>**/embedded/osgi/**/*TestCase.java</exclude>
@@ -112,8 +107,8 @@
                             </execution>
                             <execution>
                                 <id>osgi.launch</id>
-                                <phase>test</phase>
-                                <goals><goal>test</goal></goals>
+                                <phase>integration-test</phase>
+                                <goals><goal>integartion-test</goal></goals>
                                 <configuration>
                                     <includes>
                                         <include>**/embedded/osgi/**/*TestCase.java</include>
